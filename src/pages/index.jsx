@@ -1,9 +1,12 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import React from 'react';
+import Head from 'next/head';
+import styles from '../styles/Home.module.css';
+import Button from '@/components/Button';
 
-export default function Home() {
+const Home = () => {
   return (
     <div className={styles.container}>
+      <Button></Button>
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
@@ -61,5 +64,7 @@ export default function Home() {
         </a>
       </footer>
     </div>
-  )
-}
+  );
+};
+
+export default Home;
